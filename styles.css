@@ -1,0 +1,135 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 40px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+  font-family: "Times New Roman", serif;
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  max-width: 920px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card {
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 440px;
+  padding: 44px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+
+.icon-circle{
+  margin-bottom: 24px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.sedan {
+  background: #e38826;
+}
+
+.suvs {
+  background: #006970;
+}
+
+.luxury {
+  background: #004241;
+}
+
+.vehicle-icon {
+  font-size: 24px;
+  margin-top: 16px;
+  margin-left: 28px;
+  display: block;
+  width: 64px;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card h1 {
+  margin: 0 0 24px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.card p {
+  margin: 0 0 16px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.button {
+  margin-top: 24px;
+  padding: 12px 25px;
+  border: 2px solid white;
+  border-radius: 30px;
+  background: white;
+  font-size: 13px;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.sedan .button {
+  color: #e38826;
+}
+
+.suvs .button {
+  color: #006970;
+}
+
+.luxury .button {
+  color: #004241;
+}
+
+.button:hover,
+.button:focus-visible {
+  background: transparent;
+  color: white;
+}
+
+.button:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding: 60px 24px;
+    align-items: flex-start;
+  }
+
+  .cards {
+    flex-direction: column;
+    max-width: 375px;
+    margin: 0 auto;
+  }
+
+  .card {
+    flex: auto;
+    min-height: 440px;
+    padding: 44px 42px;
+  }
+}
